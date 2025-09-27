@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Davidson Gear Clothing brand</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar styles */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    /* Sections styles */
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px; /* to account for fixed navbar */
+}
+
+/* Header / Home */
+#home {
+  background: url('https://images.unsplash.com/photo-1612832022744-5d8a3a9b6b5f?ixlib=rb-4.0.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Contact Us */
+#contact {
+  background-color: #fff;
+  padding: 60px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Gallery */
+#gallery {
+  background-color: #fff;
+  padding: 60px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Order */
+#order {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#order h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#order input, #order select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#order button {
+  padding: 12px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#order button:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px){
+  #home h1 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navigation Menu -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    
+    
+  </ul>
+</nav>
+<section id="home">
+    <!-- Logo Image -->
+    <img src="c:\Users\RC_Student_lab\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\41A7730C39EDC7A116321A0E51262286\WhatsApp Image 2025-09-12 at 04.26.38_25460ddc.jpg" alt="Davidson Gear Logo" class="logo" />
+    
+  </section>
+
+<!-- Home Section -->
+<section id="home">
+  <h1>Welcome to Davidson Gear</h1>
+  <p>Quality Clothing for Your Style</p>
+</section>
+
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="c:\Users\RC_Student_lab\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\CED37D2FFBAFDD8D578AA49B33DFFD52\WhatsApp Image 2025-09-12 at 04.26.37_b155ef82.jpg" alt="Clothing 1" />
+    <img src="c:\Users\RC_Student_lab\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\737F186E3674E76EF7936CD84187567E\WhatsApp Image 2025-09-12 at 04.26.38_59768192.jpg" alt="Clothing 2" />
+    <img src="c:\Users\RC_Student_lab\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\3E4B31A488B80C652AB65247E4641CD2\WhatsApp Image 2025-09-12 at 04.26.38_03d24123.jpg" alt="Clothing 3" />
+    
+  </div>
+</section>
+
+<!-- Order Section -->
+<section id="order">
+  <h2>Place Your Order</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="number" placeholder="WhatsApp Number" required />
+    <select required>
+      <option value="">Select Product</option>
+      <option value="tshirt">T-Shirt</option>
+      <option value="hoodie">Hoodie</option>
+      <option value="jacket">Jacket</option>
+      <option value="pants">Pants</option>
+    </select>
+    <select required>
+      <option value="">Size</option>
+      <option value="small">Small</Small></option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      <option value="extra large">Extra Large</option>
+    </select>
+    <input type="number" placeholder="Quantity" min="1" required />
+    <button type="submit">Order Now</button>
+  </form>
+</section>
+<!-- Contact Us Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <input type="number" placeholder="WhatsApp Number" required />
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
